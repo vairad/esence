@@ -6,6 +6,12 @@
     border-radius: 0;
 }
 
+.background{
+    padding: 1rem;
+    background-color: #e9ecef;
+    margin-bottom: 1rem;
+}
+
 .mezera {
     margin: 100px 20px 0 20px;
 }
