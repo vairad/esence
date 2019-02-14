@@ -1,9 +1,18 @@
+<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"/>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- corrections -->
     <link rel="stylesheet" href="main.css"/>
+
+    <link rel="icon" href="img/favicon.ico?v=1.0">
 
     <title>Esence - Pravidla hry</title>
 
@@ -11,347 +20,81 @@
 
 <body>
 
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><img src="img/logo_navbar.png" alt="Button in fog"></a>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo_navbar.png" alt="Button in fog"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Zobraz menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <li><a href="pribehy.html">Příběhy hry</a></li>
-                <li><a href="pravidla.html">Pravidla hry</a></li>
-                <li><a href="https://goo.gl/forms/4Zx4gfA5plICD6wA3">Přihlásit se</a></li>
+    <div class="container float-right">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav my-2 my-sm-0">
+                <li><a class="nav-link" href="pribehy.html">Příběhy hry</a></li>
+                <li><a class="nav-link active" href="pravidla.html">Pravidla hry</a></li>
+                <li>
+                    <a class="nav-link" href="https://goo.gl/forms/4Zx4gfA5plICD6wA3" target="_blank">Přihlásit se
+                        <span class="octicon octicon-link-external"></span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="row mezera">
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 order-md-last">
 
-    <div class="container" style="margin-top:30px">
-        <div class="row">
-            <div class="col-sm-4">
-                <h2>O tvůrcích</h2>
-                <h5>tvůrčí skupina ALE</h5>
-                <div class="fakeimg">
-                    <img src="img/tvurci.png" alt="esence larp">
+            <h2>1. Obecné</h2>
+
+        </div>
+        <!-- info block -->
+        <div class="col-sm-4 order-md-first">
+            <h2>O tvůrcích</h2>
+            <h5>tvůrčí skupina Ale?!</h5>
+            <img src="img/tvurci.png" alt="Ale?! photo" class="img-fluent">
+            <p>Tvůrčí skupina Ale?! vznikla před mnoha lety a teď se znovu vrací v plné sestavě a s projektem který byl
+                dlouho u ledu, aby mohl být vyzdvihnut až přijde jeho čas.</p>
+            <p>Tvůrci jsou Tygger, Smolda, Aki, Olie a Tkaj.</p>
+            <h3>FB</h3>
+            <div class="row mb-6">
+                <div class="col-11 fb-page" data-href="https://www.facebook.com/esencelarp/" data-tabs="timeline"
+                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                     data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/esencelarp/" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/esencelarp/">Esence</a></blockquote>
                 </div>
-                <p>Tvůrčí skupina Ale?! vznikla před mnoha lety a teď se znovu vrací v plné sestavě a s projektem který
-                    byl dlouho u ledu, aby mohl být vyzdvihnut až přijde jeho čas.</p>
-                <p>Tvůrci jsou Tygger, Smolda, Aki, Olie a Tkaj.</p>
-                <h3>FB</h3>
-                <div class="fakeimg">fb_plagin</div>
-
-            </div>
-            <div class="col-sm-8">
-
-                <h2>1. Nezapomenutelný příběh</h2>
-
-
-                <p>
-                    Ahoj, říkám si Kenshin Usotsuki, ale všude používám pouze Kenshin. Zajímám se o filosofii, historii
-                    a antropologii. Mám rád Japonsko a jsem nadšený fanoušek sci-fi. Píšu ale především proto, abych vám
-                    přiblížil svůj podivuhodný příběh.
-                </p>
-                <p>
-                    Vše, o čem budu psát, se stále děje a ještě to není ukončené. Nevím, jak to dopadne. Nevím jestli to
-                    skončí dobře nebo špatně, ale doufám, že se mi podaří odhalit pravdu. I když tomu možná budete těžko
-                    věřit, protože je to všechno fakt insane far-fetched mixed-up thing, tak se mi to opravdu děje.
-                    Prostřednictvím mých příspěvků budete moci být u toho a já doufám, že vás to zaujme.
-                </p>
-                <p>
-                    Takže se držte, jdeme na to!
-
-                <p>
-
-                    Nevím, jestli jsem to někdy dříve zmiňoval,
-                    ale ve svý práci jsem se před nějakou dobou začal zabývat jednou starou, dnes již skoro vyhynulou,
-                    společností z japonskejch ostrovů. Když jsem Ainu začal zkoumat (tak se ta společnost jmenuje, v
-                    orig. アイヌ),
-                    vůbec jsem netušil, co mě čeká. Ainu se vyskytovali na různých ostrovech Japonska&nbsp;a&nbsp;na&nbsp;Kamčatce,
-                    šlo o&nbsp;tradiční lovečsko-sběračskou společnost.
-                    Zajímavostí je, že jejich genofond byl hodně specifický, protože se skoro vůbec nekřížili s
-                    ostatními zemědělskými společnostmi z okolí. To ale&nbsp;trochu odbíhám.
-                </p>
-                <p>
-                    Každopádně můj příběh začal, když jsem se zaměřil na Ainu ze Sakhalinu. Sakhalinští Ainu byli a jsou
-                    pořád poměrně málo zmapovanou částí Ainujské společnosti,
-                    a to z jednoho prostého důvodu. Každý, kdo se jimi začal zabývat, po nějaké době začal zapomínat, co
-                    o nich zjistil. Nejdřív jsem tomu nevěřil,
-                    ale pak se to začalo dít i mě. Četl jsem nějaký text a za chvíli jsem se načapal, jak do něj civím a
-                    vůbec nevím, co v něm je. Jasně, teď si řeknete,
-                    “Kámo Kenshine, to je úplně normální, to se mi stávalo ve zkouškovým každou chvíli :D :D”. HA HA, jo
-                    jenže tohle bylo jiné. Čím víc jsem se&nbsp;snažil zjistit, tím víc jsem toho zapomínal.
-                    Zkoušel jsem si dělat poznámky. Dopadlo to jen tak, že jsem v ruce držel kus papíru, který když jsem
-                    se snažil přečíst, tak jsem z něj věděl jen&nbsp;půlku.
-                    Začal jsem pátrat, jestli nejsem nemocný. Symptomy nejvíce seděly na nějaký druh selektivní amnézie,
-                    ale já jsem neprodělával žádné traumatické události,
-                    snažil jsem si jen dát dohromady poznámky, a ani si nemyslím, že bych trpěl nějakou histrionskou
-                    poruchou osobnosti. Jasně, vím, že&nbsp;jsem&nbsp;magor,
-                    hlavně když mám na conu pětihodinovou přednášku, ale snad bych ještě poznal, kdybych byl mentálně
-                    nemocný. Začal jsem tomu říkat Sakhalinská amnézie.
-
-                </p>
-                <p>
-                    Nevzpomínám od koho, ale jednoho dne jsem dostal papírek s adresou a informací, že by mi tam prý
-                    mohli pomoc s pamětí.
-                    Jo, byl jsem trochu vyděšený a taky skeptický, jestli mě tam jen nezmlátí a neoberou. Byla to ale
-                    moc velká náhoda a já jsem tomu chtěl přijít na&nbsp;kloub.
-                    Tak jsem vyrazil. Google mě odkázal na jeden starý barák uprostřed města. Zazvonil jsem na začerněný
-                    zvonek. Dveře se odbzučeli a já se instiktivně vydal po&nbsp;šipkách,
-                    které mě zavedly do sklepa. Byl to takový ten druh sklepa, který se používal na skladování, spíše
-                    než k bydlení. Všechno bylo zatuchlý,
-                    uprostřed místnosti stálo křeslo a u něj takovej zvláštní týpek s děsivým výrazem a kapucí přes
-                    hlavu. Pokynul, abych se&nbsp;posadil.
-                    Neodporoval jsem mu. Nevím, co přesně mi dělal, ale měl jsem pocit, že na mě sáhla smrt a ještě pár
-                    hodin potom jsem se&nbsp;klepal,
-                    jako bych měl zimnici. Výsledek zákroku byl přišitý takový podivný velký knoflík na mej bundě. Říkal
-                    jsem si, wtf???
-                </p>
-                <p>
-                    Už je to dva týdny, co to mám na sobě přišité, a od tý doby nezapomínám!! Ze svých poznámek jsem
-                    složil to, že Ainu věří v nějaký druh podivné energie,
-                    který by to mohl způsobovat. Vše je to popsané v nějakém jejich pradávném mýtu. Eh, tedy popsané,
-                    Ainu si na písmo moc nepotrpěli, většinu věcí si předávali orálně.
-                    Pro mě to znamená jediné, musím se vydat na Sakhalin, a zjistit, co je v tom jejich mýtu.
-                </p>
-                <p> Vyrážím, </p>
-                <p> Stay tuned, </p>
-                <p> Kenshin </p>
-                <p>
-                    PS: A ještě jedna úplně na hlavu padlá věc. Od té doby,&nbsp;co&nbsp;mám přišitý ten velký knoflík,
-                    se všude kolem mě začaly objevovat knoflíčky, rozumíte KNOFLÍČKY. Nechápu, ty mrchy se prostě
-                    zjevují.
-                    Začíná to být vážně divný! Snad to ten mýtus objasní.
-
-                </p>
-                <br>
-                <h2>2. Na konci vesmíru</h2>
-
-                <i> Na Konci Vesmíru, 21:17</i>
-                <table style="width:100%">
-                    <tr>
-                        <th>Erik:</th>
-                        <td> To je dost, že jdeš. Čekám tu na tebe už dobrou půlhodinu.</td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td> Promiň, promiň, ale byla jsem ještě u ševce. Potřebovala jsem nechat vyrobit jeden
-                            artefakt.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td> Jde o něco zajímavého?</td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td> Ne, jde jen o klasickej šroubovák.</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td> Jaký barvy?</td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td> Modrý.</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td>Takže, to už máš třetí, že?</td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td> Jo, to ano. Řekla nejistě, takže jich má možná už víc.</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td> Výborně to se bude hodit. Před chvilkou mi volal Řezník, že byl v redakci, a že pro nás
-                            něco má.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td> Myslíš jako zřídlo?</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td> No v to doufám. Mohla by tam bejt konečně modrá a s tím tvým šroubovákem nebudeme mít
-                            problém vyrobit další dávku. Potom nám Bernieho skupina utrhá ruce. Budeme se válet v
-                            esencích a nakoupíme ty schopnosti, cos vždycky chtěla.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td> Jo!!</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td> A pak budeme neporazitelný a už nám nic nebude bránit získat ty spisy. Snad mluví o Fredovo
-                            spisech.
-                        </td>
-                    </tr>
-                </table>
-                <i> Přichází třetí osoba</i>
-                <table style="width:100%">
-                    <tr>
-                        <th>Třetí osoba:</th>
-                        <td> Nazdár</td>
-                    </tr>
-                    <tr>
-                        <th>Erik a Marie:</th>
-                        <td>Nazdar Řezníku.</td>
-                    </tr>
-
-                    <tr>
-                        <th>Erik:</th>
-                        <td>Tak vo co jde? Je to zřídlo?</td>
-                    </tr>
-
-                    <tr>
-                        <th>Marie:</th>
-                        <td>Ne tak nahlas, pitomci! Jasně, že jde o zřídlo. Prej je u řeky pod Saskym mostem. Měli
-                            bychom hnedka vyrazit. Bernieovci už jsou asi na cestě.
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Marie:</th>
-                        <td>Cože, jak ty vo tom ví?</td>
-                    </tr>
-                    <tr>
-                        <th>Řezník:</th>
-                        <td>Byli v redakci těsně přede mnou, potkal jsem je ve dveřích.</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td>Do háje, dělej Marie, obleč se! Musíme hned běžet, tohle si nemůžeme nechat vyfouknout.</td>
-                    </tr>
-                    <tr>
-                        <th>Řezník:</th>
-                        <td>Pokud poběžíme máme šanci to najít dřív než oni.</td>
-                    </tr>
-                    <tr>
-                        <th>Erik:</th>
-                        <td> Máte nabito?</td>
-                    </tr>
-                </table>
-                <i>Marie kýve, Řezník ukazuje meč, pravděpodobně dvojkovej.</i>
-                <table>
-
-                    <tr>
-                        <th>Erik:</th>
-                        <td> Dobře, běžíme.</td>
-                    </tr>
-
-                </table>
-                <i>Trojice odbíhá zera&nbsp;Vesmíru vera &nbsp;21:25. Lokaci zřídla jsem ihned poera &nbsp;zjištění
-                    předal smskou úderný skupince. Doporučuju další sledování, jestli nevědí něcoera &nbsp;spisech.
-                </i>
-
-                <br>
-                <h2>3. Divoká trojka</h2>
-                <p>
-                    Leo zahnul do temné uličky na konci náměstí, za sebou stále slyšel tupé pleskání asi třech párů bot.
-
-                </p>
-                <p>
-                    “Do mývalího pytle” zaklel tiše. Ti týpci snad běhaj maratony...
-                </p>
-                <p>
-                    Už to byla asi minuta, co ho naháněli po městě. Nechápal to - byl to tak dobrej nápad a zaručenej
-                    typ. Když s klukama objevili esence, nevěděli nic, jako každej. Chyběly jim kontakty. Všichni
-                    ostatní se paktovali spolu a na ně každej kašlal. Neměli nic a byli za lůzry. Pak ale Marvin přišel
-                    s tím nápadem.
-
-                </p>
-                <p>
-                    “Hej kámo, bude to skvělý! Poslouchej, zaručenej výdělek, jako že je Éter nade mnou ”
-                </p>
-                <p>
-                    Leo se při té vzpomínce lehce usmál, víc mu jeho docházející dech nedovolil.
-                </p>
-                <p>
-                    “Je to jasný - budeme prodávat umístění zřídel, který už jsme vybrali… ty blbci ani nebudou vědět,
-                    co je trefilo! Jsme tři a na zřídla chodí každej sám, protože se nechtěj dělit - zničí je jejich
-                    vlastní ješitnost.”, tenkrát Marvin s úsměvem filozofoval
-                </p>
-                <p>
-                    No… nápad to byl skvělej, fakt se na tom dalo vydělat. Skoro celý týden byli postrachem Plzně, nikdo
-                    nevěděl kde Divoká trojka zase udeří, a všichni byli posraný až za ušima. Až do dneška jsme se v
-                    podstatě beztrestně koupali v prachách, nakupovali zbraně a artefakty a dokonce jsme sehnali i
-                    nějaký zajímavý info. Až do dneška...
-                </p>
-                <p>
-                    “Kde se jich tam, u všech černejch knoflíků, vzalo tolik??” Zanadával Leo, který dobíhal do parku.
-                </p>
-                <p>
-                    Přeskočil křoví a vydal se přes trávník. Za sebou uslyšel plastové klapnutí zásobníku, a tak začal
-                    kličkovat, což ho sice zpomalilo, ale vyhnul se tak dvou střelám zpoza něj. Doběhl na ulici, kde,
-                    jak doufal, pojede bus, do kterého by na poslední chvíli naskočil, a unikl tak pronásledovatelům.
-                    Načrtl ve vzduchu trojúhelník a vzdychl “Tak to Éter se mnou” ...jasně, že žádnej nejel.
-                </p>
-                <p>
-                    Dávat vědět klukům nemělo smysl - když je přepadli, odsrali to oba okamžitě. I kdyby zázrakem vytáhl
-                    telefon a dovolal se jim a dalším zázrakem nebyli už paralizovaný, budou stopro očesaný, a tak
-                    stejně budou vědět prd o tom, s čím by chtěl pomoct. Byl v tom sám.
-                    “Že jsem nezůstal u mentálních soubojů” pomyslel si. Člověku nejde o kejhák a má klid si věci
-                    promyslet. Jenže když se objevil na scéně Vilém, všechno to šlo do háje.
-                    “Vilém!!”
-                    Odplivl si Leo při běhu z kopce po Americké. Jak toho tupce nesnášel. Začínal s nima, ale pak se
-                    začal tahat s tím žlutým blbečkem. Najednou měl esence a pak… jakoby snad měl artefakty přišitý i na
-                    artefaktech. Nemělo to cenu, nikdo se mu nevyrovnal, všechno a všechny poslal k šípku.
-                    v
-                <p>
-                    Leovi už docházel dech, zahnul do Martinský a zaplul do vchodu nějakýho baru. Tam vyběhl do prvního
-                    patra, kde byly dveře do bytů. Slyšel, jak mu buší srdce.
-                </p>
-                <p>
-                    “Nedám vám zadarmo ani jedinou esenci, aby vás Tanuki pytlem praštil” špitl si.
-                </p>
-                <p>
-                    Krabičku, na kterou kdysi napsal své jméno a “tohlejedůležitýtyvole“, schoval rychle pod rohožku
-                    bytu 2A a propiskou si na zpocenou ruku chvíli zkoušel napsat adresu. Po chvíli snažení rezignovaně
-                    vytáhl telefon a místo prostě vyfotil. “Cvak a blik”, udělal jeho telefon a on už jen protočil oči
-                    nad svou blbostí. Jako odpověď se ozvaly kroky na schodišti a Leo pohotově vytáhl svůj kinžál.
-                    Do prvního z nich stačil třikrát bodnout….jen pro jistotu, člověk si v dnešní době nemůže bejt ničim
-                    jistej. Druhej z nich už tak neopatrný nebyl. Leovo snažení bylo jako bílej krystal - hezký, ale k
-                    ničemu. Střelil ho do hrudi dřív, než vůbec zvedl oči. Leo si sedl šokem na zem.
-                </p>
-                <p>
-
-                    “A je to v pytli...”, pomyslel si, když cítil, jak se jeho vědomí rychle vytrácí...
-                </p>
-                <p>
-                    O dvě minuty později vyšel na ulici zmatený mladík, držící v ruce krabičku, a nechápavě se rozhlédl.
-                </p>
-                <p>
-                    “Hmm, asi půjdu na pivo. Potřebuju si na chvíli sednout. Jsem nějakej unavenej.”, pomyslel si a
-                    odešel do svého oblíbeného baru.
-                </p>
-                <p>
-                <p>Druhý den ráno mu zazvonil telefon: </p>
-                <p> “Je tam Leo?” </p>
-                <p>“Kdo je sakra Leo?” </p>
-                <p>“Proč bych tam měl sakra chodit?? Co mi jako řekneš?? Kdo jsi a co mi chceš??” </p>
-                <p>“Co jsi dělal poslední týden po práci??” </p>
-                <p>“ To je jasný přece…..no….ehm….co se to do pr….??” </p>
-                <p>“ Buď tam přesně, nemám na tebe celý den...Píp...píp...píp..” </p>
             </div>
         </div>
     </div>
-
-    <div class="jumbotron text-center">
-        <p>Ale?! | <a class="navbar-brand" href="https://www.facebook.com/events/793292281011902/">FB</a></p>
-    </div>
 </div>
+
+<footer class="footer bg-light p-5">
+    <div class="container text-center">
+        <p class="text-muted">Ale?! | <a href="https://www.facebook.com/events/793292281011902/">FB</a></p>
+    </div>
+</footer>
+
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v3.2&appId=201344233217491&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </html>
